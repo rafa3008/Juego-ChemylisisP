@@ -155,7 +155,7 @@ def Pregunta3():
         return (K1*K2*K3*K4*K5*K6)/((x**6)+(K1*x**5)+(K1*K2*x**4)+(K1*K2*K3*x**3)+(K1*K2*K3*K4*x**2)+(K1*K2*K3*K4*K5*x)+(K1*K2*K3*K4*K5*K6))
     z=float(Pregu3.Kf)*A4(10**-Val)
     a=float(input())
-    err=round(abs(z-a)/z,2)
+    err=round(abs(z-a)*100/z,2)
     print('Tu respuesta fue '+str(a)+' '+'vs calculado'+ ' '+str(z)+', tuviste una desviación porcentual del'+' '+str(err)+'%')
     print()
     
@@ -270,7 +270,7 @@ def Pregunta7():
     print('Calcula la masa (g) de '+Pregu6.name+' que precipita en '+str(V)+' mL de agua')
     z = (((Pregu6.kps/Pregu6.n**Pregu6.n)**(1/(Pregu6.n +1)))*(V/1000)*Pregu6.PM)
     a=float(input())
-    err=round(abs(z-a)/z,2)
+    err=round(abs(z-a)*100/z,2)
     print('Tu respuesta fue '+str(a)+' '+'vs calculado'+ ' '+str((z))+', tuviste una desviación porcentual del'+' '+str(err)+'%')
     print()    
 
