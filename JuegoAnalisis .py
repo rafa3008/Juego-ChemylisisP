@@ -213,7 +213,7 @@ def Pregunta5():
     a=float(input())
     z=round(float(Right.pot-Left.pot),3)
     err=round(abs(z-a),3)
-    print('Tu respuesta fue '+str(a)+' vs calculado '+str(z),', te pasaste por '+str(err))
+    print('Tu respuesta fue '+str(a)+'V vs calculado '+str(z)+'V, te pasaste por '+str(err)+'V')
     print()
 def Pregunta6():
     S1=redoxtitra(0.02, 0.01, "Ascorbico y Fe",0.767,0.390)
@@ -254,7 +254,7 @@ def Pregunta6():
     z=(round(E,3))
     a=float(input())
     err=round(abs(z-a),3)
-    print('Tu respuesta fue '+str(a)+' vs calculado '+str(z),', te pasaste por '+str(err))
+    print('Tu respuesta fue '+str(a)+'V vs calculado '+str(z)+'V, te pasaste por '+str(err)+'V')
     print()
 
 def Pregunta7():
