@@ -288,6 +288,14 @@ def Juego():
     [Pregunta5() for _ in range(N)]
     [Pregunta6() for _ in range(N)]
     [Pregunta7() for _ in range(N)]
+    print('Necesita desempate? (Y/N)')
+    a=str(input())
+    desem=[Pregunta1,Pregunta2,Pregunta3,Pregunta4,Pregunta5,Pregunta6,Pregunta7]
+    if a in {'Y'}:
+        random.choice(desem)()
+    elif a in {'N'}:
+        print()
+        print('Juego Finalizado')
 
 Juego()         
 
